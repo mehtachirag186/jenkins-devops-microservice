@@ -2,9 +2,8 @@ pipeline{
    agent any  
 // { docker { image 'maven:3.6.3'} }
    tools { 
-      maven 'MAVEN_HOME' 
-      jdk 'JAVA_HOME' 
-    }
+      maven 'myMaven' 
+         }
      stages {	
           stage('Build') {
   	    steps {
