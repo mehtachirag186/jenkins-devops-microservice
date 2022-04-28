@@ -25,17 +25,17 @@ pipeline{
        }
 	 stage ('Compile') {
 	   steps {
-	    echo 'mvn clean compile'
+	    echo "mvn clean compile"
           }
          }
           stage('Test') {
             steps {
-             echo 'mvn test'
+             echo "mvn test"
         }
        }
 //          stage('Integration Test') {
  //           steps {
-  //            echo  'mvn failsafe:integration-test failsafe:verify'   
+  //            echo  "mvn failsafe:integration-test failsafe:verify"
    //    }	
     //  }	
  	 stage ('Build Docker Image') {
