@@ -33,11 +33,11 @@ pipeline{
              echo 'mvn test'
         }
        }
-          stage('Integration Test') {
-            steps {
-              echo  'mvn failsafe:integration-test failsafe:verify'   
-       }	
-      }	
+//          stage('Integration Test') {
+ //           steps {
+  //            echo  'mvn failsafe:integration-test failsafe:verify'   
+   //    }	
+    //  }	
  	 stage ('Build Docker Image') {
 	   steps {
       	   // docker build -t mehtachirag186/currency-exchange-devops:$env.BUILD.TAG  
